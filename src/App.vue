@@ -20,6 +20,12 @@ const addWeight = () =>{
     date: new Date().getTime()
   })
 }
+
+watch(weights, newWeights => {
+  const ws = [...newWeights]
+
+  console.log(ws);
+}, { deep: true })
 </script>
 
 <template>
